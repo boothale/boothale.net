@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Redirect www domain
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Force directories to have a trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
