@@ -1,11 +1,12 @@
 #content {
-    margin: 50px auto;
-    width: 550px;
+    margin: 30px auto;
+    width: 750px;
 }
 
 #info {
     float: right;
     text-align: right;
+    margin-right: 100px;
 }
 
 #info ul {
@@ -14,6 +15,6 @@
 
 pre {
     font-size: 7px;
-    line-height: 3px;
+    line-height: 4px;
 }
 
